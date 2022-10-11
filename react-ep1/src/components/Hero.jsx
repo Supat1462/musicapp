@@ -9,8 +9,8 @@ function Hero() {
   const textStyleR = 'text-[1.4rem] items-start tracking-[0.5rem] mb-[1rem]'
 
   return (
-    <div className='wrapper bg-white flex items-center px-[8rem] w-full py-[10rem]'>
-      <div className='headings flex flex-col items-end justify-center h-full text-[#3f3f46]'>
+    <div className='wrapper bg-white flex items-center w-full py-[10rem]'>
+      <div className='headings flex flex-col items-end justify-center h-full text-[#3f3f46] px-[8rem]'>
         <span className='text-[1rem] items-end tracking-[0.2rem]'>
           New arrivals
         </span>
@@ -25,7 +25,7 @@ function Hero() {
         <img src={require("../img/food.png")} alt="" className='w-[60%]' />
       </div>
 
-      <div className='orders flex flex-col items-start justify-items-stretch h-full text-[#3f3f46] px-[8rem]'>
+      <div className='orders flex flex-col items-start justify-center h-full text-[#3f3f46] px-[8rem]'>
         <span className={textStyleR + ' text-[#65a30d]'}>current dish</span>
         <p className='text-[0.7rem] normal-case'>
           Drescription of the dish<br />
