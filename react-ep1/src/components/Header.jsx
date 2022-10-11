@@ -2,18 +2,23 @@ import React from 'react'
 import CenterMenu from './CenterMenu'
 
 function Header() {
-    // button
-    const buttonstyle = 'text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 '
-    // header
-    const headerstyle = 'bg-[#270049] flex items-center justify-between px-[5rem] py-[1.5rem] text-[1rem]'
+
+  // header
+  const headerstyle = 'flex items-center justify-between px-[8rem] py-[3rem] text-[1rem]'
   return (
     <div className={headerstyle}>
-        <img src={require("../img/Asset 1.png")} alt="" className='logo w-20' />
-        <CenterMenu />
-        <div className='buttons flex'>
-            <button className={buttonstyle}>Sign up</button>
-            <button className={buttonstyle}>Log in</button>
-        </div>
+      <div className='logo flex items-center cursor-pointer'>
+        <img src={require("../img/logo.png")} alt="" className='w-[30px]'/>
+        <span class="ml-[0.7rem] text-[#3f3f46] cursor-pointer font-bold tracking-[0.3rem] text-lg">Your bowl</span>
+      </div>
+
+      <CenterMenu />
+      <div className='form flex'>
+      <ul className='flex w-full justify-between text-[#3f3f46] cursor-pointer text-lg tracking-[0.2rem]'>
+            <li className="mx-[0.5rem]">your account</li> 
+            <li className="mx-[0.5rem]">create account</li> 
+        </ul>
+      </div>
     </div>
   )
 }
